@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="520" viewBox="0 0 1180 520" role="img" aria-labelledby="title desc">
+  <title id="title">Swedish Tutor Agent system overview</title>
+  <desc id="desc">A simplified four-step learning loop: choose topic, retrieve context, practise with the agent, and review memory.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#2f5f73"/>
+    </marker>
+    <marker id="softArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#7a6a3a"/>
+    </marker>
+    <style>
+      .bg { fill: #f7f9fb; }
+      .title { font: 700 30px Arial, sans-serif; fill: #16313d; }
+      .subtitle { font: 400 16px Arial, sans-serif; fill: #4d6470; }
+      .card { fill: #ffffff; stroke: #c9d8df; stroke-width: 2; rx: 18; }
+      .cardAccent { fill: #edf7f4; stroke: #73a99b; stroke-width: 2; rx: 18; }
+      .memory { fill: #fff8e6; stroke: #d6b766; stroke-width: 2; rx: 18; }
+      .step { font: 700 14px Arial, sans-serif; fill: #377086; letter-spacing: .5px; }
+      .label { font: 700 21px Arial, sans-serif; fill: #17313d; }
+      .body { font: 400 15px Arial, sans-serif; fill: #445b66; }
+      .small { font: 400 13px Arial, sans-serif; fill: #637780; }
+      .arrow { stroke: #2f5f73; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+      .loop { stroke: #7a6a3a; stroke-width: 3; fill: none; stroke-dasharray: 8 7; marker-end: url(#softArrow); }
+      .dataset { fill: #e8f0f4; stroke: #b5c8d1; stroke-width: 1.5; rx: 14; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1180" height="520"/>
+
+  <text class="title" x="52" y="58">Swedish Tutor Agent: Core Learning Flow</text>
+  <text class="subtitle" x="52" y="86">The system turns retrieved lesson material into guided Swedish practice, then uses memory to choose what to review next.</text>
+
+  <rect class="dataset" x="408" y="118" width="365" height="76"/>
+  <text class="step" x="432" y="148">LEARNING DATASET</text>
+  <text class="body" x="432" y="174">Dialogue plans + vocabulary + sentence examples</text>
+
+  <rect class="card" x="52" y="248" width="230" height="145"/>
+  <text class="step" x="82" y="284">1. TOPIC</text>
+  <text class="label" x="82" y="315">Learner chooses</text>
+  <text class="body" x="82" y="345">A scene such as school,</text>
+  <text class="body" x="82" y="368">shopping, transport, or food.</text>
+
+  <rect class="cardAccent" x="338" y="248" width="230" height="145"/>
+  <text class="step" x="368" y="284">2. RETRIEVAL</text>
+  <text class="label" x="368" y="315">Context is found</text>
+  <text class="body" x="368" y="345">The agent retrieves the</text>
+  <text class="body" x="368" y="368">right words, examples,</text>
+  <text class="body" x="368" y="391">and dialogue plan.</text>
+
+  <rect class="cardAccent" x="624" y="248" width="230" height="145"/>
+  <text class="step" x="654" y="284">3. PRACTICE</text>
+  <text class="label" x="654" y="315">Guided dialogue</text>
+  <text class="body" x="654" y="345">LLM creates a controlled</text>
+  <text class="body" x="654" y="368">conversation, quiz,</text>
+  <text class="body" x="654" y="391">translation, and TTS.</text>
+
+  <rect class="memory" x="910" y="248" width="230" height="145"/>
+  <text class="step" x="940" y="284">4. MEMORY</text>
+  <text class="label" x="940" y="315">Review weak words</text>
+  <text class="body" x="940" y="345">Mistakes become review</text>
+  <text class="body" x="940" y="368">cards for later practice.</text>
+
+  <path class="arrow" d="M282 320 C300 320, 316 320, 334 320"/>
+  <path class="arrow" d="M568 320 C586 320, 602 320, 620 320"/>
+  <path class="arrow" d="M854 320 C872 320, 888 320, 906 320"/>
+  <path class="arrow" d="M590 194 L513 244"/>
+
+  <path class="loop" d="M1018 407 C1018 468, 455 468, 455 399"/>
+  <text class="small" x="598" y="456">memory adapts future practice</text>
+</svg>
