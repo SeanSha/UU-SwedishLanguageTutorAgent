@@ -24,99 +24,11 @@ The learning flow is:
 6. The feedback and memory tools update the learner model after each answer.
 7. The TTS tool provides Swedish audio for dialogue sentences and review cards.
 
-The overall architecture is shown below as a layered system. The design separates the user interface, agent orchestration, tools, knowledge sources, memory, and model connection. This makes the system easier to extend with new retrieval tools or new agent actions.
+The simplified system overview is shown below. I intentionally keep it high-level: the most important idea is the learning loop from topic selection, to retrieval, to guided practice, to memory-based review.
 
-```mermaid
-flowchart LR
-    subgraph L1["User Layer"]
-        User["Learner<br/>chooses topic<br/>answers quiz<br/>reviews weak words"]
-    end
+![Swedish Tutor Agent system overview](./system_overview.svg)
 
-    subgraph L2["Interface Layer"]
-        UI["Gradio UI<br/>app.py"]
-        Guide["Lesson Study Guide<br/>vocabulary + examples + dialogue"]
-        ReviewUI["Memory Review Quiz<br/>flashcard practice"]
-    end
-
-    subgraph L3["Agent Orchestration Layer"]
-        Agent["SwedishSpeakingAgent<br/>agent.py"]
-        State["Dialogue State<br/>current turn, history, active quiz"]
-    end
-
-    subgraph L4["Tool Layer"]
-        Retrieval["Structured Retrieval Tool<br/>topic context retrieval"]
-        Dialogue["Dialogue Tool<br/>turn control"]
-        Quiz["Quiz Tool<br/>exercise generation"]
-        Feedback["Feedback Tool<br/>answer checking"]
-        TTS["TTS + Avatar Tool<br/>audio and tutor state"]
-        VocabResolver["Vocabulary Resolver<br/>Swedish word forms to meaning"]
-    end
-
-    subgraph L5["Knowledge and Memory Layer"]
-        Dataset["Hugging Face / Local JSONL Data<br/>plans, vocabulary, examples"]
-        Memory["Learner Memory<br/>wrong words + review weights"]
-    end
-
-    subgraph L6["Model Layer"]
-        Provider["LLM Provider<br/>model router"]
-        Online["OpenAI-compatible API"]
-        Local["Ollama Local Model"]
-    end
-
-    User --> UI
-    UI --> Agent
-    Agent --> State
-    Agent --> Retrieval
-    Agent --> Dialogue
-    Agent --> Quiz
-    Agent --> Feedback
-    Agent --> TTS
-    Quiz --> VocabResolver
-    Feedback --> Memory
-    Retrieval --> Dataset
-    Memory -.boosts future retrieval.-> Retrieval
-    Memory -.creates review cards.-> ReviewUI
-    Agent --> Provider
-    Provider --> Online
-    Provider --> Local
-    Retrieval --> Guide
-    Guide --> UI
-    TTS --> UI
-    ReviewUI --> UI
-```
-
-The runtime flow for one lesson is:
-
-```mermaid
-sequenceDiagram
-    participant U as Learner
-    participant UI as Gradio UI
-    participant A as SwedishSpeakingAgent
-    participant IR as Retrieval Tool
-    participant D as Local Dataset
-    participant Q as Quiz + Feedback Tools
-    participant M as Memory Tool
-    participant T as TTS Tool
-
-    U->>UI: Select topic and start lesson
-    UI->>A: start_practice(topic, quiz_type, language)
-    A->>IR: retrieve dialogue plan, vocabulary, examples
-    IR->>D: read plans, vocabulary, sentence examples
-    D-->>IR: topic-specific teaching context
-    IR-->>A: structured retrieval bundle
-    A-->>UI: lesson guide + first dialogue turn
-    UI-->>U: show vocabulary, examples, Swedish sentence, quiz
-    U->>UI: answer quiz
-    UI->>Q: check answer
-    Q->>M: update wrong/correct word memory
-    Q-->>UI: feedback and correction
-    UI-->>U: show feedback and next-turn controls
-    U->>UI: open Memory Review Quiz
-    UI->>M: get weak words
-    M-->>UI: review queue
-    UI->>T: play/recover Swedish audio
-    UI-->>U: flashcard review practice
-```
+In implementation, the agent is modular: retrieval, dialogue control, quiz generation, feedback, TTS, memory, and LLM connection are separate tools. This keeps the prototype simple to demonstrate but still extensible.
 
 Online mode uses an OpenAI-compatible chat completion client. The code can run with an OpenAI API key through the UI or through `.env` settings. It can also use compatible endpoints such as Berget AI by changing the base URL and model name.
 
