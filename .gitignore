@@ -1,0 +1,19 @@
+.env
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# Runtime/generated files
+assets/tts_cache/
+assets/tts_temp.mp3
+memory/user_memory.json
+scratch/
+
+# Local logs and exports
+*.log
+*.tmp
+*.mp4
+*.mov

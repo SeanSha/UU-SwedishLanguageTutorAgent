@@ -1,0 +1,151 @@
+id,text,english,chinese,label,lecture_theme,source,review_status
+1,Jag är i affären.,I am in the shop.,我在商店里。,food_shop,food_and_shop,lecture_aligned_ai_assisted,needs_manual_review
+2,Jag köper mat.,I buy food.,我买食物。,food_shop,food_and_shop,lecture_aligned_ai_assisted,needs_manual_review
+3,Jag vill köpa mat.,I want to buy food.,我想买食物。,food_shop,food_and_shop,lecture_aligned_ai_assisted,needs_manual_review
+4,Han köper mat nu.,He buys food now.,他现在买食物。,food_shop,food_and_shop,lecture_aligned_ai_assisted,needs_manual_review
+5,Jag köpte mat igår.,I bought food yesterday.,我昨天买了食物。,food_shop,food_and_shop,lecture_aligned_ai_assisted,needs_manual_review
+6,Jag vill ha kaffe.,I want coffee.,我想要咖啡。,food_shop,food_and_shop,lecture_aligned_ai_assisted,needs_manual_review
+7,Jag dricker kaffe.,I drink coffee.,我喝咖啡。,food_shop,food_and_shop,lecture_aligned_ai_assisted,needs_manual_review
+8,Jag dricker vatten.,I drink water.,我喝水。,food_shop,food_and_shop,lecture_aligned_ai_assisted,needs_manual_review
+9,Jag vill ha en kanelbulle.,I want a cinnamon bun.,我想要一个肉桂卷。,food_shop,food_and_shop,lecture_aligned_ai_assisted,needs_manual_review
+10,Jag vill ha en semla.,I want a semla.,我想要一个 semla 甜点。,food_shop,food_and_shop,lecture_aligned_ai_assisted,needs_manual_review
+11,Jag vill ha en tomat.,I want a tomato.,我想要一个西红柿。,food_shop,food_and_shop,lecture_aligned_ai_assisted,needs_manual_review
+12,Jag vill ha tomater.,I want tomatoes.,我想要西红柿。,food_shop,food_and_shop,lecture_aligned_ai_assisted,needs_manual_review
+13,Jag vill ha ett äpple.,I want an apple.,我想要一个苹果。,food_shop,food_and_shop,lecture_aligned_ai_assisted,needs_manual_review
+14,Jag vill ha äpplen.,I want apples.,我想要苹果。,food_shop,food_and_shop,lecture_aligned_ai_assisted,needs_manual_review
+15,Jag vill ha ett päron.,I want a pear.,我想要一个梨。,food_shop,food_and_shop,lecture_aligned_ai_assisted,needs_manual_review
+16,Jag vill äta fisk.,I want to eat fish.,我想吃鱼。,food_shop,food_and_shop,lecture_aligned_ai_assisted,needs_manual_review
+17,Jag vill äta kyckling.,I want to eat chicken.,我想吃鸡肉。,food_shop,food_and_shop,lecture_aligned_ai_assisted,needs_manual_review
+18,Vill du äta fisk eller kyckling?,Do you want to eat fish or chicken?,你想吃鱼还是鸡肉？,food_shop,food_and_shop,lecture_aligned_ai_assisted,needs_manual_review
+19,Vad kostar kaffet?,What does the coffee cost?,咖啡多少钱？,food_shop,food_and_shop,lecture_aligned_ai_assisted,needs_manual_review
+20,Vad kostar äpplet?,What does the apple cost?,苹果多少钱？,food_shop,food_and_shop,lecture_aligned_ai_assisted,needs_manual_review
+21,Var är maten?,Where is the food?,食物在哪里？,food_shop,food_and_shop,lecture_aligned_ai_assisted,needs_manual_review
+22,Var är kaffet?,Where is the coffee?,咖啡在哪里？,food_shop,food_and_shop,lecture_aligned_ai_assisted,needs_manual_review
+23,Jag brukar köpa mat.,I usually buy food.,我通常买食物。,food_shop,food_and_shop,lecture_aligned_ai_assisted,needs_manual_review
+24,Jag brukar dricka kaffe.,I usually drink coffee.,我通常喝咖啡。,food_shop,food_and_shop,lecture_aligned_ai_assisted,needs_manual_review
+25,Tack för maten.,Thank you for the food.,谢谢这顿饭。,food_shop,food_and_shop,lecture_aligned_ai_assisted,needs_manual_review
+26,Mitt barn är här.,My child is here.,我的孩子在这里。,family_school,family_and_school,lecture_aligned_ai_assisted,needs_manual_review
+27,Mitt barn är i skolan.,My child is in school.,我的孩子在学校。,family_school,family_and_school,lecture_aligned_ai_assisted,needs_manual_review
+28,Barnet är i skolan.,The child is in school.,孩子在学校。,family_school,family_and_school,lecture_aligned_ai_assisted,needs_manual_review
+29,Jag har ett barn.,I have a child.,我有一个孩子。,family_school,family_and_school,lecture_aligned_ai_assisted,needs_manual_review
+30,Jag har två barn.,I have two children.,我有两个孩子。,family_school,family_and_school,lecture_aligned_ai_assisted,needs_manual_review
+31,Jag hämtar mitt barn.,I pick up my child.,我接我的孩子。,family_school,family_and_school,lecture_aligned_ai_assisted,needs_manual_review
+32,Jag lämnar mitt barn.,I drop off my child.,我送我的孩子。,family_school,family_and_school,lecture_aligned_ai_assisted,needs_manual_review
+33,Jag kommer klockan tre.,I come at three o clock.,我三点来。,family_school,family_and_school,lecture_aligned_ai_assisted,needs_manual_review
+34,Mitt barn kommer inte idag.,My child is not coming today.,我的孩子今天不来。,family_school,family_and_school,lecture_aligned_ai_assisted,needs_manual_review
+35,Mitt barn är trött.,My child is tired.,我的孩子累了。,family_school,family_and_school,lecture_aligned_ai_assisted,needs_manual_review
+36,Mitt barn mår bra.,My child is fine.,我的孩子很好。,family_school,family_and_school,lecture_aligned_ai_assisted,needs_manual_review
+37,Mitt barn mår inte bra.,My child is not well.,我的孩子不舒服。,family_school,family_and_school,lecture_aligned_ai_assisted,needs_manual_review
+38,Min son är här.,My son is here.,我儿子在这里。,family_school,family_and_school,lecture_aligned_ai_assisted,needs_manual_review
+39,Min dotter är här.,My daughter is here.,我女儿在这里。,family_school,family_and_school,lecture_aligned_ai_assisted,needs_manual_review
+40,Min son är i skolan.,My son is in school.,我儿子在学校。,family_school,family_and_school,lecture_aligned_ai_assisted,needs_manual_review
+41,Min dotter är i skolan.,My daughter is in school.,我女儿在学校。,family_school,family_and_school,lecture_aligned_ai_assisted,needs_manual_review
+42,Kan jag prata med läraren?,Can I talk to the teacher?,我可以和老师说话吗？,family_school,family_and_school,lecture_aligned_ai_assisted,needs_manual_review
+43,Läraren är här.,The teacher is here.,老师在这里。,family_school,family_and_school,lecture_aligned_ai_assisted,needs_manual_review
+44,Vad heter läraren?,What is the teacher called?,老师叫什么名字？,family_school,family_and_school,lecture_aligned_ai_assisted,needs_manual_review
+45,Var är barnets jacka?,Where is the child s jacket?,孩子的外套在哪里？,family_school,family_and_school,lecture_aligned_ai_assisted,needs_manual_review
+46,Var är barnets väska?,Where is the child s bag?,孩子的包在哪里？,family_school,family_and_school,lecture_aligned_ai_assisted,needs_manual_review
+47,Behöver barnet mat?,Does the child need food?,孩子需要食物吗？,family_school,family_and_school,lecture_aligned_ai_assisted,needs_manual_review
+48,Behöver barnet vatten?,Does the child need water?,孩子需要水吗？,family_school,family_and_school,lecture_aligned_ai_assisted,needs_manual_review
+49,Kan ni ringa mig?,Can you call me?,你们可以给我打电话吗？,family_school,family_and_school,lecture_aligned_ai_assisted,needs_manual_review
+50,Tack för idag.,Thank you for today.,谢谢今天的照顾。,family_school,family_and_school,lecture_aligned_ai_assisted,needs_manual_review
+51,Jag mår inte bra.,I am not well.,我不舒服。,health_places,health_and_places,lecture_aligned_ai_assisted,needs_manual_review
+52,Jag är trött.,I am tired.,我累了。,health_places,health_and_places,lecture_aligned_ai_assisted,needs_manual_review
+53,Jag har ont här.,I have pain here.,我这里疼。,health_places,health_and_places,lecture_aligned_ai_assisted,needs_manual_review
+54,Jag har ont i magen.,I have stomach pain.,我肚子疼。,health_places,health_and_places,lecture_aligned_ai_assisted,needs_manual_review
+55,Jag har ont i halsen.,I have throat pain.,我喉咙疼。,health_places,health_and_places,lecture_aligned_ai_assisted,needs_manual_review
+56,Jag är sjuk.,I am sick.,我生病了。,health_places,health_and_places,lecture_aligned_ai_assisted,needs_manual_review
+57,Min son är sjuk.,My son is sick.,我儿子生病了。,health_places,health_and_places,lecture_aligned_ai_assisted,needs_manual_review
+58,Min dotter är sjuk.,My daughter is sick.,我女儿生病了。,health_places,health_and_places,lecture_aligned_ai_assisted,needs_manual_review
+59,Jag behöver hjälp.,I need help.,我需要帮助。,health_places,health_and_places,lecture_aligned_ai_assisted,needs_manual_review
+60,Jag behöver medicin.,I need medicine.,我需要药。,health_places,health_and_places,lecture_aligned_ai_assisted,needs_manual_review
+61,Var är apoteket?,Where is the pharmacy?,药房在哪里？,health_places,health_and_places,lecture_aligned_ai_assisted,needs_manual_review
+62,Jag är på apoteket.,I am at the pharmacy.,我在药房。,health_places,health_and_places,lecture_aligned_ai_assisted,needs_manual_review
+63,Jag går till apoteket.,I go to the pharmacy.,我去药房。,health_places,health_and_places,lecture_aligned_ai_assisted,needs_manual_review
+64,Var är sjukhuset?,Where is the hospital?,医院在哪里？,health_places,health_and_places,lecture_aligned_ai_assisted,needs_manual_review
+65,Jag är på sjukhuset.,I am at the hospital.,我在医院。,health_places,health_and_places,lecture_aligned_ai_assisted,needs_manual_review
+66,Jag går till sjukhuset.,I go to the hospital.,我去医院。,health_places,health_and_places,lecture_aligned_ai_assisted,needs_manual_review
+67,Var är sköterskan?,Where is the nurse?,护士在哪里？,health_places,health_and_places,lecture_aligned_ai_assisted,needs_manual_review
+68,Kan jag prata med sköterskan?,Can I talk to the nurse?,我可以和护士说话吗？,health_places,health_and_places,lecture_aligned_ai_assisted,needs_manual_review
+69,Kan du ringa sjukhuset?,Can you call the hospital?,你能给医院打电话吗？,health_places,health_and_places,lecture_aligned_ai_assisted,needs_manual_review
+70,Jag vill träffa läkare.,I want to see a doctor.,我想看医生。,health_places,health_and_places,lecture_aligned_ai_assisted,needs_manual_review
+71,Läkaren är här.,The doctor is here.,医生在这里。,health_places,health_and_places,lecture_aligned_ai_assisted,needs_manual_review
+72,Kan läkaren ringa mig?,Can the doctor call me?,医生可以给我打电话吗？,health_places,health_and_places,lecture_aligned_ai_assisted,needs_manual_review
+73,Jag kan inte komma idag.,I cannot come today.,我今天不能来。,health_places,health_and_places,lecture_aligned_ai_assisted,needs_manual_review
+74,Jag behöver vila.,I need to rest.,我需要休息。,health_places,health_and_places,lecture_aligned_ai_assisted,needs_manual_review
+75,Jag mår bättre idag.,I feel better today.,我今天感觉好些。,health_places,health_and_places,lecture_aligned_ai_assisted,needs_manual_review
+76,Jag är på bussen.,I am on the bus.,我在公交车上。,transport,transport_and_directions,lecture_aligned_ai_assisted,needs_manual_review
+77,Bussen går nu.,The bus leaves now.,公交车现在走。,transport,transport_and_directions,lecture_aligned_ai_assisted,needs_manual_review
+78,När går bussen?,When does the bus leave?,公交车什么时候走？,transport,transport_and_directions,lecture_aligned_ai_assisted,needs_manual_review
+79,Var är bussen?,Where is the bus?,公交车在哪里？,transport,transport_and_directions,lecture_aligned_ai_assisted,needs_manual_review
+80,Jag åker buss.,I go by bus.,我坐公交车。,transport,transport_and_directions,lecture_aligned_ai_assisted,needs_manual_review
+81,Jag är på tåget.,I am on the train.,我在火车上。,transport,transport_and_directions,lecture_aligned_ai_assisted,needs_manual_review
+82,Tåget går nu.,The train leaves now.,火车现在走。,transport,transport_and_directions,lecture_aligned_ai_assisted,needs_manual_review
+83,När går tåget?,When does the train leave?,火车什么时候走？,transport,transport_and_directions,lecture_aligned_ai_assisted,needs_manual_review
+84,Var är tåget?,Where is the train?,火车在哪里？,transport,transport_and_directions,lecture_aligned_ai_assisted,needs_manual_review
+85,Jag åker tåg.,I go by train.,我坐火车。,transport,transport_and_directions,lecture_aligned_ai_assisted,needs_manual_review
+86,Jag är på tunnelbanan.,I am on the subway.,我在地铁上。,transport,transport_and_directions,lecture_aligned_ai_assisted,needs_manual_review
+87,Var är tunnelbanan?,Where is the subway?,地铁在哪里？,transport,transport_and_directions,lecture_aligned_ai_assisted,needs_manual_review
+88,Jag åker tunnelbana.,I go by subway.,我坐地铁。,transport,transport_and_directions,lecture_aligned_ai_assisted,needs_manual_review
+89,Jag är i bilen.,I am in the car.,我在车里。,transport,transport_and_directions,lecture_aligned_ai_assisted,needs_manual_review
+90,Jag kör bil.,I drive a car.,我开车。,transport,transport_and_directions,lecture_aligned_ai_assisted,needs_manual_review
+91,Jag kan köra bil.,I can drive a car.,我会开车。,transport,transport_and_directions,lecture_aligned_ai_assisted,needs_manual_review
+92,Jag cyklar idag.,I bike today.,我今天骑自行车。,transport,transport_and_directions,lecture_aligned_ai_assisted,needs_manual_review
+93,Jag vill cykla.,I want to bike.,我想骑自行车。,transport,transport_and_directions,lecture_aligned_ai_assisted,needs_manual_review
+94,Jag går till jobbet.,I walk to work.,我走路去工作。,transport,transport_and_directions,lecture_aligned_ai_assisted,needs_manual_review
+95,Jag åker till jobbet.,I go to work.,我去工作。,transport,transport_and_directions,lecture_aligned_ai_assisted,needs_manual_review
+96,Var är stationen?,Where is the station?,车站在哪里？,transport,transport_and_directions,lecture_aligned_ai_assisted,needs_manual_review
+97,Jag går till stationen.,I go to the station.,我去车站。,transport,transport_and_directions,lecture_aligned_ai_assisted,needs_manual_review
+98,Är det långt?,Is it far?,远吗？,transport,transport_and_directions,lecture_aligned_ai_assisted,needs_manual_review
+99,Till höger.,To the right.,向右。,transport,transport_and_directions,lecture_aligned_ai_assisted,needs_manual_review
+100,Till vänster.,To the left.,向左。,transport,transport_and_directions,lecture_aligned_ai_assisted,needs_manual_review
+101,Jag är hemma.,I am at home.,我在家。,home_places,home_and_prepositions,lecture_aligned_ai_assisted,needs_manual_review
+102,Jag bor i Stockholm.,I live in Stockholm.,我住在斯德哥尔摩。,home_places,home_and_prepositions,lecture_aligned_ai_assisted,needs_manual_review
+103,Jag bor i en lägenhet.,I live in an apartment.,我住在一套公寓里。,home_places,home_and_prepositions,lecture_aligned_ai_assisted,needs_manual_review
+104,Jag är i lägenheten.,I am in the apartment.,我在公寓里。,home_places,home_and_prepositions,lecture_aligned_ai_assisted,needs_manual_review
+105,Lägenheten är liten.,The apartment is small.,公寓很小。,home_places,home_and_prepositions,lecture_aligned_ai_assisted,needs_manual_review
+106,Lägenheten är stor.,The apartment is big.,公寓很大。,home_places,home_and_prepositions,lecture_aligned_ai_assisted,needs_manual_review
+107,Det är kallt hemma.,It is cold at home.,家里很冷。,home_places,home_and_prepositions,lecture_aligned_ai_assisted,needs_manual_review
+108,Det är varmt hemma.,It is warm at home.,家里很暖和。,home_places,home_and_prepositions,lecture_aligned_ai_assisted,needs_manual_review
+109,Jag är i rummet.,I am in the room.,我在房间里。,home_places,home_and_prepositions,lecture_aligned_ai_assisted,needs_manual_review
+110,Rummet är stort.,The room is big.,房间很大。,home_places,home_and_prepositions,lecture_aligned_ai_assisted,needs_manual_review
+111,Rummet är litet.,The room is small.,房间很小。,home_places,home_and_prepositions,lecture_aligned_ai_assisted,needs_manual_review
+112,Jag är i köket.,I am in the kitchen.,我在厨房里。,home_places,home_and_prepositions,lecture_aligned_ai_assisted,needs_manual_review
+113,Köket är här.,The kitchen is here.,厨房在这里。,home_places,home_and_prepositions,lecture_aligned_ai_assisted,needs_manual_review
+114,Jag är i sängen.,I am in the bed.,我在床上。,home_places,home_and_prepositions,lecture_aligned_ai_assisted,needs_manual_review
+115,Boken är på bordet.,The book is on the table.,书在桌子上。,home_places,home_and_prepositions,lecture_aligned_ai_assisted,needs_manual_review
+116,Kaffet är på bordet.,The coffee is on the table.,咖啡在桌子上。,home_places,home_and_prepositions,lecture_aligned_ai_assisted,needs_manual_review
+117,Stolen är bredvid bordet.,The chair is beside the table.,椅子在桌子旁边。,home_places,home_and_prepositions,lecture_aligned_ai_assisted,needs_manual_review
+118,Mattan är på golvet.,The rug is on the floor.,地毯在地板上。,home_places,home_and_prepositions,lecture_aligned_ai_assisted,needs_manual_review
+119,Lampan är ovanför bordet.,The lamp is above the table.,灯在桌子上方。,home_places,home_and_prepositions,lecture_aligned_ai_assisted,needs_manual_review
+120,Väskan är under stolen.,The bag is under the chair.,包在椅子下面。,home_places,home_and_prepositions,lecture_aligned_ai_assisted,needs_manual_review
+121,Dörren är till vänster.,The door is to the left.,门在左边。,home_places,home_and_prepositions,lecture_aligned_ai_assisted,needs_manual_review
+122,Köket är till höger.,The kitchen is to the right.,厨房在右边。,home_places,home_and_prepositions,lecture_aligned_ai_assisted,needs_manual_review
+123,Jag målar väggen.,I paint the wall.,我粉刷墙。,home_places,home_and_prepositions,lecture_aligned_ai_assisted,needs_manual_review
+124,Väggen är vit.,The wall is white.,墙是白色的。,home_places,home_and_prepositions,lecture_aligned_ai_assisted,needs_manual_review
+125,Var är nyckeln?,Where is the key?,钥匙在哪里？,home_places,home_and_prepositions,lecture_aligned_ai_assisted,needs_manual_review
+126,Hej!,Hello!,你好！,social_intro,intro_and_clarification,lecture_aligned_ai_assisted,needs_manual_review
+127,Hejsan!,Hi!,嗨！,social_intro,intro_and_clarification,lecture_aligned_ai_assisted,needs_manual_review
+128,Vad heter du?,What is your name?,你叫什么名字？,social_intro,intro_and_clarification,lecture_aligned_ai_assisted,needs_manual_review
+129,Jag heter Sanna.,My name is Sanna.,我叫 Sanna。,social_intro,intro_and_clarification,lecture_aligned_ai_assisted,needs_manual_review
+130,Var kommer du ifrån?,Where do you come from?,你来自哪里？,social_intro,intro_and_clarification,lecture_aligned_ai_assisted,needs_manual_review
+131,Jag kommer från Kina.,I come from China.,我来自中国。,social_intro,intro_and_clarification,lecture_aligned_ai_assisted,needs_manual_review
+132,Var bor du?,Where do you live?,你住在哪里？,social_intro,intro_and_clarification,lecture_aligned_ai_assisted,needs_manual_review
+133,Jag bor i Stockholm.,I live in Stockholm.,我住在斯德哥尔摩。,social_intro,intro_and_clarification,lecture_aligned_ai_assisted,needs_manual_review
+134,Vad talar du för språk?,What languages do you speak?,你说什么语言？,social_intro,intro_and_clarification,lecture_aligned_ai_assisted,needs_manual_review
+135,Jag talar svenska.,I speak Swedish.,我说瑞典语。,social_intro,intro_and_clarification,lecture_aligned_ai_assisted,needs_manual_review
+136,Jag talar lite svenska.,I speak a little Swedish.,我说一点瑞典语。,social_intro,intro_and_clarification,lecture_aligned_ai_assisted,needs_manual_review
+137,Vad studerar du?,What do you study?,你学什么？,social_intro,intro_and_clarification,lecture_aligned_ai_assisted,needs_manual_review
+138,Jag studerar svenska.,I study Swedish.,我学习瑞典语。,social_intro,intro_and_clarification,lecture_aligned_ai_assisted,needs_manual_review
+139,Hur är det?,How is it?,怎么样？,social_intro,intro_and_clarification,lecture_aligned_ai_assisted,needs_manual_review
+140,Hur mår du?,How are you?,你好吗？,social_intro,intro_and_clarification,lecture_aligned_ai_assisted,needs_manual_review
+141,Jag mår bra.,I am fine.,我很好。,social_intro,intro_and_clarification,lecture_aligned_ai_assisted,needs_manual_review
+142,Förlåt?,Sorry?,不好意思？,social_intro,intro_and_clarification,lecture_aligned_ai_assisted,needs_manual_review
+143,Vad sa du?,What did you say?,你说什么？,social_intro,intro_and_clarification,lecture_aligned_ai_assisted,needs_manual_review
+144,Jag förstår inte.,I do not understand.,我不明白。,social_intro,intro_and_clarification,lecture_aligned_ai_assisted,needs_manual_review
+145,Jag hörde inte.,I did not hear.,我没听见。,social_intro,intro_and_clarification,lecture_aligned_ai_assisted,needs_manual_review
+146,Kan du säga det en gång till?,Can you say it one more time?,你能再说一遍吗？,social_intro,intro_and_clarification,lecture_aligned_ai_assisted,needs_manual_review
+147,Vad betyder det?,What does it mean?,这是什么意思？,social_intro,intro_and_clarification,lecture_aligned_ai_assisted,needs_manual_review
+148,Vad heter det på svenska?,What is it called in Swedish?,这个用瑞典语叫什么？,social_intro,intro_and_clarification,lecture_aligned_ai_assisted,needs_manual_review
+149,Ha det så bra!,Take care!,保重！,social_intro,intro_and_clarification,lecture_aligned_ai_assisted,needs_manual_review
+150,Tack för idag!,Thank you for today!,谢谢今天！,social_intro,intro_and_clarification,lecture_aligned_ai_assisted,needs_manual_review

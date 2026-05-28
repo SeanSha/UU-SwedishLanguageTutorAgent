@@ -1,0 +1,17 @@
+{
+  "greeting": "Greeting the other speaker (e.g. Hej!)",
+  "offer_help": "Offering help (e.g. Vad vill du köpa?)",
+  "state_want": "Stating what one wants (e.g. Jag vill ha...)",
+  "ask_quantity": "Asking about quantity (e.g. Hur många?)",
+  "state_quantity": "Stating quantity (e.g. en, två)",
+  "state_price": "Stating price (e.g. Det kostar...)",
+  "ask_permission": "Asking for permission (e.g. Kan jag få...)",
+  "confirm_yes": "Confirming yes (e.g. Ja, det går bra.)",
+  "state_problem": "Stating a problem (e.g. Jag mår inte bra.)",
+  "ask_location": "Asking for a location (e.g. Var är toaletten?)",
+  "give_directions": "Giving directions (e.g. Den ligger till vänster.)",
+  "state_feeling": "Stating a feeling or state (e.g. Jag har ont i huvudet.)",
+  "state_origin": "Stating country of origin (e.g. Jag kommer från Kina.)",
+  "ask_health": "Asking how someone is (e.g. Hur mår du?)",
+  "goodbye": "Saying goodbye (e.g. Hejdå!)"
+}

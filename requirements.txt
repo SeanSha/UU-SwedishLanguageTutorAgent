@@ -1,0 +1,10 @@
+gradio>=4.0.0
+huggingface_hub
+datasets
+pandas
+sentence-transformers
+numpy
+openai
+requests
+python-dotenv
+gTTS
