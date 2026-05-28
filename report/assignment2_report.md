@@ -24,6 +24,41 @@ The learning flow is:
 6. The feedback and memory tools update the learner model after each answer.
 7. The TTS tool provides Swedish audio for dialogue sentences and review cards.
 
+The overall architecture is shown below:
+
+```mermaid
+flowchart TD
+    User["Learner<br/>selects topic, answers quiz, reviews words"] --> UI["Gradio Web UI<br/>app.py<br/>setup, lesson, memory review pages"]
+
+    UI --> Agent["SwedishSpeakingAgent<br/>agent.py<br/>orchestrates state and tool calls"]
+
+    Agent --> Retrieval["Structured Retrieval Tool<br/>retrieves topic context"]
+    Retrieval --> Plans["Dialogue Plans<br/>data/dialogue_plans.jsonl"]
+    Retrieval --> Vocab["Vocabulary Bank<br/>data/vocabulary.jsonl"]
+    Retrieval --> Examples["Sentence Examples<br/>data/sentence_examples.jsonl"]
+    Retrieval --> LessonGuide["Lesson Study Guide<br/>vocabulary, retrieved examples, example dialogue"]
+
+    Agent --> Dialogue["Dialogue Tool<br/>controls turn-by-turn practice state"]
+    Agent --> Quiz["Quiz Tool<br/>multiple choice and fill-in-the-blank"]
+    Agent --> Feedback["Feedback Tool<br/>checks answers and explains corrections"]
+    Agent --> TTS["TTS + Avatar Tool<br/>Swedish audio and Sven visual state"]
+
+    Feedback --> Memory["Memory Tool<br/>local learner memory<br/>wrong words and review weights"]
+    Memory --> Review["Memory Review Quiz<br/>flashcards from weak words"]
+    Memory --> Retrieval
+    Memory --> Quiz
+
+    Agent --> LLMProvider["LLM Provider<br/>local or online model router"]
+    LLMProvider --> OpenAI["Online Mode<br/>OpenAI-compatible API"]
+    LLMProvider --> Ollama["Local Mode<br/>Ollama"]
+
+    LessonGuide --> UI
+    Dialogue --> UI
+    Quiz --> UI
+    Review --> UI
+    TTS --> UI
+```
+
 Online mode uses an OpenAI-compatible chat completion client. The code can run with an OpenAI API key through the UI or through `.env` settings. It can also use compatible endpoints such as Berget AI by changing the base URL and model name.
 
 ## 3. Information Retrieval Component
