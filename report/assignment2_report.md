@@ -26,23 +26,7 @@ The learning flow is:
 
 The simplified system overview is shown below. I intentionally keep it high-level: the most important idea is the learning loop from topic selection, to retrieval, to guided practice, to memory-based review.
 
-```mermaid
-flowchart LR
-    A["1. Topic<br/>Learner chooses a scenario"] --> B["2. Retrieval<br/>Find plan, vocabulary, examples"]
-    D["Swedish Learning Dataset<br/>dialogue plans + words + examples"] --> B
-    B --> C["3. Guided Practice<br/>dialogue, quiz, translation, TTS"]
-    C --> E["4. Memory Review<br/>weak words become review cards"]
-    E -.->|adapts future practice| B
-
-    classDef topic fill:#ffffff,stroke:#9fb6c2,stroke-width:2px,color:#17313d;
-    classDef core fill:#edf7f4,stroke:#73a99b,stroke-width:2px,color:#17313d;
-    classDef memory fill:#fff8e6,stroke:#d6b766,stroke-width:2px,color:#17313d;
-    classDef data fill:#e8f0f4,stroke:#b5c8d1,stroke-width:2px,color:#17313d;
-    class A topic;
-    class B,C core;
-    class D data;
-    class E memory;
-```
+![Core learning flow](./system_overview.png)
 
 In implementation, the agent is modular: retrieval, dialogue control, quiz generation, feedback, TTS, memory, and LLM connection are separate tools. This keeps the prototype simple to demonstrate but still extensible.
 
@@ -50,37 +34,7 @@ Online mode uses an OpenAI-compatible chat completion client. The code can run w
 
 The agent structure is shown below. The `SwedishSpeakingAgent` works as the coordinator: it receives the learner's topic and answers from the UI, calls the retrieval and memory tools, prepares grounded context for the LLM, and sends the generated practice content back to the interface.
 
-```mermaid
-flowchart TB
-    UI["Gradio Web UI<br/>topic selection, lesson guide, quiz, audio"] --> Agent["SwedishSpeakingAgent<br/>dialogue state + tool coordination"]
-
-    Agent --> Retrieval["Retrieval Tool<br/>selects topic context"]
-    Retrieval --> Dataset["Local / HF Dataset<br/>plans, vocabulary, sentence examples"]
-
-    Agent --> Prompt["Prompt Builder<br/>fills retrieved context into lesson prompt"]
-    Prompt --> LLM["OpenAI-Compatible LLM Client<br/>online generation"]
-    LLM --> Agent
-
-    Agent --> Quiz["Quiz + Feedback Tools<br/>checks answers and creates practice"]
-    Agent --> TTS["TTS Tool<br/>Swedish listening audio"]
-    Agent --> Memory["Memory Tool<br/>tracks weak vocabulary"]
-    Memory --> Review["Memory Review Quiz<br/>flashcard-style revision"]
-    Review --> UI
-    Quiz --> UI
-    TTS --> UI
-    Agent --> UI
-
-    classDef ui fill:#ffffff,stroke:#9fb6c2,stroke-width:2px,color:#17313d;
-    classDef agent fill:#edf7f4,stroke:#4d9c8b,stroke-width:3px,color:#17313d;
-    classDef tool fill:#eef4f8,stroke:#8fb0bf,stroke-width:2px,color:#17313d;
-    classDef memory fill:#fff8e6,stroke:#d6b766,stroke-width:2px,color:#17313d;
-    classDef llm fill:#f3eef8,stroke:#b19acb,stroke-width:2px,color:#17313d;
-    class UI ui;
-    class Agent agent;
-    class Retrieval,Dataset,Prompt,Quiz,TTS tool;
-    class Memory,Review memory;
-    class LLM llm;
-```
+![Agent internal structure](./agent_structure.png)
 
 ## 3. Information Retrieval Component
 
