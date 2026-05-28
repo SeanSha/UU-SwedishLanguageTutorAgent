@@ -81,6 +81,22 @@ Then keep `Local Mode` selected in the UI.
 5. **Memory update**: wrong answers increase a word's review weight; correct answers decay it.
 6. **Memory review**: weak words become review flashcards with audio, meanings, and multiple-choice reinforcement.
 
+## Dataset
+
+The structured teaching data is based on the Hugging Face dataset:
+
+```text
+SeanSha30/swedish-pre-a1-learning-agent-dataset
+```
+
+Dataset page:
+
+```text
+https://huggingface.co/datasets/SeanSha30/swedish-pre-a1-learning-agent-dataset
+```
+
+The app uses local cached JSONL files in `data/` so it can still run reliably during demos even if the network is unavailable.
+
 ## Architecture
 
 ```text
