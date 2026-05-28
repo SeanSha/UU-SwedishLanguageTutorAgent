@@ -30,6 +30,12 @@
 
 IR 的核心在于：用户不是直接问 LLM “帮我编一个瑞典语对话”。系统会先从数据集中检索适合当前 topic 的材料。
 
+这个项目使用的数据集是：
+
+```text
+https://huggingface.co/datasets/SeanSha30/swedish-pre-a1-learning-agent-dataset
+```
+
 比如用户选择 Food Shop：
 
 1. 系统找到 food shop 的 dialogue plan。

@@ -51,7 +51,7 @@ FALLBACK_DATA = [
 
 class ScenarioTool:
     """
-    Handles loading, caching, and filtering the Hugging Face Swedish Pre-A1 Scenario Classifier dataset.
+    Handles loading, caching, and filtering the Hugging Face Swedish Pre-A1 learning agent dataset.
     """
     def __init__(self):
         self.df = None

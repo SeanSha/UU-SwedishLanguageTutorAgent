@@ -109,6 +109,12 @@ Stores example Swedish sentences for different scenario functions, such as greet
 
 These files are important because the agent should not invent the whole lesson randomly. It should ground its output in retrieved teaching material.
 
+The local JSONL files are based on the Hugging Face dataset:
+
+```text
+https://huggingface.co/datasets/SeanSha30/swedish-pre-a1-learning-agent-dataset
+```
+
 ## 5. Tool Modules
 
 ### `tools/structured_retrieval_tool.py`
