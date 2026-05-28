@@ -38,7 +38,7 @@ The agent structure is shown below. The `SwedishSpeakingAgent` works as the coor
 
 ## 3. Information Retrieval Component
 
-The core IR component is the structured retrieval pipeline. The project uses local cached data files:
+The core IR component is the structured retrieval pipeline. The project uses three local cached files, but they do not have the same role:
 
 - `data/dialogue_plans.jsonl`
 - `data/vocabulary.jsonl`
@@ -49,7 +49,13 @@ These local files are based on my Hugging Face dataset:
 `SeanSha30/swedish-pre-a1-learning-agent-dataset`  
 https://huggingface.co/datasets/SeanSha30/swedish-pre-a1-learning-agent-dataset
 
-For each selected topic, the retrieval tool selects the relevant plan and ranks sentence examples by topic, function, slots, and keyword overlap. This retrieved context is shown in the UI as a lesson guide: first vocabulary, then retrieved sentence examples, then an example dialogue. This makes the retrieval visible to the learner and to the evaluator.
+The main retrieval file is `data/dialogue_plans.jsonl`. When the learner selects a topic, the UI topic label is mapped to the dataset scenario id, for example `food_shop` to `matbutik`. The system filters dialogue plans by this scenario id, then scores each candidate plan using token overlap between the learner query and the plan title, micro-goal, description, turn functions, and turn goals. A few simple keyword bonuses are also used for common cases, such as bus, milk, sick, school, or kitchen. The selected plan becomes the lesson structure: it defines the order of turns, the speaker, the dialogue function, the learning goal, and required slots.
+
+After the plan is selected, `data/sentence_examples.jsonl` is used to fill the plan with concrete Swedish examples. For every turn in the plan, the system first searches sentence examples with the same scenario and the same dialogue function. It then ranks them with a simple score: same function gets the strongest weight, required slot values add more points, and overlapping words from the turn goal and function add smaller points. If there is no exact match, the system falls back to related functions, then to same-scenario keyword overlap, and finally to a slot-aware generated fallback sentence. This keeps the dialogue close to the selected topic and avoids mixing unrelated scenarios.
+
+The third file, `data/vocabulary.jsonl`, is used as supporting context rather than the main plan selector. After the scenario is known, the system retrieves all vocabulary for that scenario. These words are inserted into the LLM context as the topic vocabulary bank, shown at the top of the study guide, used for vocabulary explanations, and reused by the quiz and memory review parts.
+
+The final prompt context is assembled by `StructuredRetrievalTool.format_llm_context()`. It contains the selected dialogue plan, the relevant function descriptions, the topic vocabulary bank, a ranked sentence bank, and turn-by-turn retrieved examples. The LLM is instructed to follow this retrieved context and prefer the turn-level examples. This makes the generation grounded in the controlled dataset rather than a black-box free chat.
 
 The project also includes a memory-aware retrieval layer. The memory tool stores words the learner got wrong, together with a review weight. Later retrieval and quiz generation can reuse those difficult words, making the system adaptive rather than stateless.
 
