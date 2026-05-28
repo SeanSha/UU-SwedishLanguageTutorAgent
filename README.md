@@ -142,3 +142,4 @@ Include in the final Canvas submission:
 - Video link: add after recording
 - Report: see `report/assignment2_report.md`
 - Personal project explanation: see `report/project_walkthrough_zh.md`
+- Code walkthrough for newcomers: see `report/code_walkthrough_for_newcomers.md`
