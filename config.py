@@ -25,7 +25,7 @@ DATASET_CACHE_PATH = os.path.join(DATA_DIR, "dataset_cache.csv")
 USER_MEMORY_PATH = os.path.join(MEMORY_DIR, "user_memory.json")
 
 # Dataset Configuration
-HF_DATASET_ID = "SeanSha30/swedish-pre-a1-scenario-classifier-dataset"
+HF_DATASET_ID = "SeanSha30/swedish-pre-a1-learning-agent-dataset"
 
 # Scenario Labels List
 SCENARIOS = [
