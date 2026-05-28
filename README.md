@@ -4,9 +4,16 @@ A Gradio-based AI agent for beginner Swedish practice. The learner selects a rea
 
 This project was built for **Assignment 2: AI Agents** in 5LN712. It focuses on how an agent can use **Information Retrieval (IR)**, memory, and tool actions to keep a language-learning dialogue grounded and extensible.
 
+## Submission Links
+
+- **Demo video**: https://drive.google.com/file/d/1K_oObTMqPVrDLnkd9IgnKK3cNIyfCe53/view
+- **Hugging Face dataset**: https://huggingface.co/datasets/SeanSha30/swedish-pre-a1-learning-agent-dataset
+- **PDF report**: https://github.com/SeanSha/UU-SwedishLanguageTutorAgent/blob/main/report/UU_Assignment_2_SwedishLanguageTutorAgent.pdf
+- **GitHub repository**: https://github.com/SeanSha/UU-SwedishLanguageTutorAgent
+
 ## Demo
 
-Video link:  https://drive.google.com/drive/folders/1jmilLOWidlQsNdap_kDILpNqGecJ35zI?usp=sharing
+Video link: https://drive.google.com/file/d/1K_oObTMqPVrDLnkd9IgnKK3cNIyfCe53/view
 
 ## Main Features
 
