@@ -6,7 +6,7 @@ This project was built for **Assignment 2: AI Agents** in 5LN712. It focuses on 
 
 ## Demo
 
-Video link: add the recorded video link here before submission.
+Video link:  https://drive.google.com/drive/folders/1jmilLOWidlQsNdap_kDILpNqGecJ35zI?usp=sharing
 
 ## Main Features
 
