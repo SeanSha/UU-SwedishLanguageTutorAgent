@@ -34,6 +34,11 @@ The core IR component is the structured retrieval pipeline. The project uses loc
 - `data/vocabulary.jsonl`
 - `data/sentence_examples.jsonl`
 
+These local files are based on my Hugging Face dataset:
+
+`SeanSha30/swedish-pre-a1-learning-agent-dataset`  
+https://huggingface.co/datasets/SeanSha30/swedish-pre-a1-learning-agent-dataset
+
 For each selected topic, the retrieval tool selects the relevant plan and ranks sentence examples by topic, function, slots, and keyword overlap. This retrieved context is shown in the UI as a lesson guide: first vocabulary, then retrieved sentence examples, then an example dialogue. This makes the retrieval visible to the learner and to the evaluator.
 
 The project also includes a memory-aware retrieval layer. The memory tool stores words the learner got wrong, together with a review weight. Later retrieval and quiz generation can reuse those difficult words, making the system adaptive rather than stateless.
